@@ -156,27 +156,27 @@ test_ipc-flood()
 }
 test_playback-d100l1r1()
 {
-	"$mydir"/check-playback.sh -d "${long_duration}" -l 1 -r 1
+	"$mydir"/check-playback.sh -d "${long_duration}" -l 1 -r 1 "${sof_no_logger}"
 }
 test_capture-d100l1r1()
 {
-	"$mydir"/check-capture.sh -d "${long_duration}" -l 1 -r 1
+	"$mydir"/check-capture.sh -d "${long_duration}" -l 1 -r 1 "${sof_no_logger}"
 }
 test_playback-d1l100r1()
 {
-	"$mydir"/check-playback.sh -d 1 -l "$large_loop" -r 1
+	"$mydir"/check-playback.sh -d 1 -l "$large_loop" -r 1 "${sof_no_logger}"
 }
 test_capture_d1l100r1()
 {
-	"$mydir"/check-capture.sh -d 1 -l "$large_loop" -r 1
+	"$mydir"/check-capture.sh -d 1 -l "$large_loop" -r 1  "${sof_no_logger}"
 }
 test_playback_d1l1r50()
 {
-	"$mydir"/check-playback.sh -d 1 -l 1 -r "$large_round"
+	"$mydir"/check-playback.sh -d 1 -l 1 -r "$large_round" "${sof_no_logger}"
 }
 test_capture_d1l1r50()
 {
-	"$mydir"/check-capture.sh -d 1 -l 1 -r "$large_round"
+	"$mydir"/check-capture.sh -d 1 -l 1 -r "$large_round" "${sof_no_logger}"
 }
 test_speaker()
 {
