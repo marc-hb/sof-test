@@ -30,7 +30,7 @@ sudo true
 # For the list of flags search:   git -C linux grep SOF_DBG_
 # Warning: the DMA trace can be forced ON in Kconfig and
 # the SOF_DBG_ENABLE_TRACE bit ignored here.
-# insert_module snd_sof sof_debug=1
+insert_module snd_sof sof_debug=1
 
 
 # Insert codec drivers first, they are required to register ASoC components
