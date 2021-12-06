@@ -79,7 +79,7 @@ SUDO_LEVEL=${SUDO_LEVEL:-}
 # The default value must be 5s because 5s is the inter-test delay
 # waited by the internal test runner used by sof/jenkins CI and that
 # test runner does not define SOF_TEST_INTERVAL (internal bug 158)
-SOF_TEST_INTERVAL=${SOF_TEST_INTERVAL:-5}
+SOF_TEST_INTERVAL=${SOF_TEST_INTERVAL:-1}
 
 # If we don't have SOF card in the system in SOF test, the default fallback
 # to test pipelines from /proc behavior will cause false positive, because
