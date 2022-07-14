@@ -3,6 +3,11 @@
 # Copyright(c) 2018 Intel Corporation. All rights reserved.
 
 
+sudo()
+{
+    "$@"
+}
+
 TOPDIR=$(cd "$(dirname "${BASH_SOURCE[0]}")/../.." && pwd)
 
 # Used only by more advanced error handling

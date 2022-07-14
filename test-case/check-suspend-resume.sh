@@ -164,7 +164,7 @@ main()
         sleep_once "$i"
     done
 
-    $already_unloaded || $keep_modules || "$TOPDIR"/tools/kmod/sof_insert.sh ||
+    $already_unloaded || $keep_modules || sudo "$TOPDIR"/tools/kmod/sof_insert.sh ||
         die "Failed to reload audio drivers"
     sof-kernel-log-check.sh "$KERNEL_CHECKPOINT" ||
         die "Found kernel error after reloading audio drivers"

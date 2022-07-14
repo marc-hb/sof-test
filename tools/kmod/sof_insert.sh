@@ -19,8 +19,8 @@ insert_module() {
     fi
 }
 
-# Test sudo first, not after dozens of SKIP
-sudo true
+myself=$(realpath "$0")
+[ $(id -u) = 0 ] || sudo "$myself"
 
 # Modules parameters can be passed here as a quick and purely local
 # hack.  Be conscious of unexpected interactions with "official"

@@ -570,10 +570,12 @@ func_lib_check_sudo()
     }
 }
 
+# Make this a standalone script that can be called as sudo -u user?
 systemctl_show_pulseaudio()
 {
     printf '\n'
     local domain
+    # user needs export XDG_RUNTIME_DIR=/run/user/$(id -ru)
     for domain in --system --global --user; do
         ( set -x
           systemctl "$domain" list-unit-files --all '*pulse*'
