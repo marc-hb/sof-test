@@ -215,7 +215,7 @@ print_test_result_exit()
 
 SUDO_LEVEL=""
 # overwrite the sudo command, sudo in the script can direct using sudo command
-sudo()
+XXXsudo()
 {
     local cmd=( "$@" )
 
