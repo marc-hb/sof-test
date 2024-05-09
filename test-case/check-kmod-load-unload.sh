@@ -85,7 +85,7 @@ do
 
     setup_kernel_check_point
     dlogi "run kmod/sof_insert.sh"
-    sudo "$TOPDIR"/tools/kmod/sof_insert.sh || die "insert modules error"
+    "$TOPDIR"/tools/kmod/sof_insert.sh || die "insert modules error"
 
     ## - 2a: check for errors after insertion
     dlogi "checking for general errors after kmod insert with sof-kernel-log-check tool"

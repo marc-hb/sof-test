@@ -274,11 +274,11 @@ print_logs_exit()
 
 reload_drivers()
 {
-    sudo "${TOPDIR}"/tools/kmod/sof_remove.sh
+    "${TOPDIR}"/tools/kmod/sof_remove.sh
 
     setup_kernel_check_point
 
-    sudo "${TOPDIR}"/tools/kmod/sof_insert.sh
+    "${TOPDIR}"/tools/kmod/sof_insert.sh
 
     # The DSP may unfortunately need multiple retries to boot, see
     # https://github.com/thesofproject/sof/issues/3395
